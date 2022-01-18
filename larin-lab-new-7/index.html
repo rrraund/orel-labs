@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Репетитор Владислав</title>
+	<script rel="script" src="js/load_time.js"></script>
+	<script rel="script" src="js/state.js"></script>
+</head>
+<body class="page" data-150="background-color: rgb(234,233,242); color: rgb(51,51,51);" data-200="background-color: rgb(30,30,30); color: rgb(255,255,255)" data-250="background-color: rgb(30,30,30); color: rgb(255,255,255)" data-275="background-color: rgb(234,233,242); color: rgb(51,51,51);">
+	<header class="page-header">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="todo.html">Todo</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="slide-1">
+			<div data-0="background-position: 65% 100px;"
+				 data-250="background-position: 65% 350px;"
+				 class="container bcg">
+				<h1 class="page-title">Ваш репетитор</h1>
+				<p><i>По всем вопросам пишите:</i><br><a href="mailto:Vladtron505@yandex.ru">Vladtron505@yandex.ru</a></p>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section id="slide-2">
+			<div data-100="background-position: 150% 170px"
+				 data-120="background-position: 70% 150px;transform:rotate(0deg);"
+				 data-125="background-position: 50% 220px;transform:rotate(180deg);"
+				 data-130="background-position: 30% 140px;transform:rotate(360deg);"
+				 data-150="background-position: -50% 130"
+				 class="bcg" style="height: 100px">
+			</div>
+		</section>
+		<section class="about container">
+			<h2 class="section-title">Нужна помощь репетитора?</h2>
+			<img data-0="transform:rotate(0deg);" data-200="transform:rotate(360deg);" class="about-image" src="img/me1.jpg" width="150">
+			<div class="about-content">
+				<div data-200="background-image:!url('img/unknown-raccoon.svg');left: -200px; top: 600px" data-210="left: 0px" data-225="top: 800px" data-235="left: -200px" class="bcg-1">
+				</div>
+				<p>Добрый день! Меня зовут Владислав, и я помогу вам с подготовкой к ЕГЭ, ОГЭ или подтяну ваши знания языка программирования (Pascal, C, C++, Java, Python).</p>
+				<p>Я отлично нахожу общий язык с учениками и всегда ищу индивидуальный подход для каждого. Со мной вы не встретите скучных занятий и сухих лекций — только интересные уроки и постоянная практика. Заниматься готов абсолютно при любом уровне начальных знаний информатики и программирования. Возраст обучающегося так же не имеет значения. Первое занятие проведу бесплатно, где оценю уровень ваших знаний и составлю план занятий, удобный и эффективный именно для вас!
+				Готов заниматься больше одного раза в неделю. При необходимости можем перейти на полуторачасовой формат занятий. Провожу занятия как очно так и дистанционно.</p>
+				<p>Готовлю к ЕГЭ и олимпиадам по информатике уже третий год. Имею 100 баллов по ЕГЭ и большой опыт в олимпиадном программировании. Студент 3-го курса. Учусь в университете <a href="https://itmo.ru/ru/">ИТМО</a> на информационных системах и технологиях. Уверен, мы найдём общий язык :)</p>
+			</div>
+		</section>
+		<section class="contacts container">
+			<h2 class="section-title">Контакты для связи</h2>
+			<p class="contacts-name"><i>Ларин Владислав Денисович</i></p>
+			<ul>
+				<li><i>telegram:</i> <a href="https://t.me/rrraund">rrraund</a></li>
+				<li><i>email:</i> <a href="mailto:Vladtron505@yandex.ru">Vladtron505@yandex.ru</a></li>
+				<li><i>телефон:</i> <a href="tel:+79536214885">+79536214885</a></li>
+			</ul>
+		</section>
+		<section id="slide-3">
+			<div onclick="window.scrollTo({
+    			top: 0,
+    			behavior: 'smooth'});" data-360="background-position-y:250px" data-400="background-position-y:25px" class="bcg-2">
+            </div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<p>© Ваш репетитор</p>
+			<p>2022</p>
+		</div>
+		<div>
+			<p id="load_time"></p>
+		</div>
+	</footer>
+</body>
+<script rel="script" src="js/scrollr.min.js"></script>
+<script type="text/javascript">
+	var s;
+	let width = document.documentElement.clientWidth
+	if (width > 1000) {
+		s = skrollr.init(); //инициализация
+	}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.js" integrity="sha512-bvxXT2u2PNVKMpHmLR54QQ+qAnhn0dM//5spHP+sjRcnlZSmNMaLkvZXAr8peMHyNlUoDEgNnYIlrUTnr5kNYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	var smoothScroll = SmoothScroll({
+		touchpadSupport:true, //нету scrollbar
+		keyboardSupport:true, //поддержка стрелочек
+		arrowScroll: 2 //2px за нажатие
+	})
+</script>
+</html>
