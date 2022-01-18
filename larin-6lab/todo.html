@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <title>Репетитор Владислав</title>
+    <script rel="script" src="js/load_time.js"></script>
+    <script rel="script" src="js/state.js"></script>
+    <script rel="script" src="js/todo.js"></script>
+    <script rel="script" src="js/request.js"></script>
+</head>
+<body class="page">
+<header class="page-header">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="todo.html">Todo</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="todo">
+        <h3>
+            Todo list
+        </h3>
+        <div>
+            <form onsubmit="addTask();return false;">
+                <label>
+                    <input placeholder="What needs to be done?">
+                </label>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div class="states">
+            <p>item left</p>
+            <div class="state">
+                <p onclick="state(0)" class="active">All</p>
+                <p onclick="state(1)">Active</p>
+                <p onclick="state(2)">Completed</p>
+            </div>
+        </div>
+        <img alt="preloader" class="image none" id="preloader" src="img/preloader.gif">
+        <img alt="error" class="image none" id="error" src="img/error.jpg">
+        <template>
+            <div class="task">
+                <label>
+                    <input type="checkbox" onclick="changeState(this)">
+                </label>
+                <p>a</p>
+                <button onclick="deleteTask(this)">Удалить</button>
+            </div>
+        </template>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <p>© Ваш репетитор</p>
+        <p>2022</p>
+    </div>
+    <div>
+        <p id="load_time"></p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.page-header {
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 50px;
+    margin: 20px 0;
+    background: #867bc7;
+    color: white;
+    border-radius: 10px;
+}
+
+.task p {
+    position: absolute;
+    left: 40px;
+    max-width: 255px;
+    word-break: break-word;
+}
+
+.task input {
+    margin-left: 25px;
+}
+.states {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #867bc7;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.states p {
+    margin-left: 25px;
+}
+.state {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)
+}
+
+.state p {
+    margin: 0 3px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 3px;
+}
+.todo {
+    width: 460px;
+    margin: 50px auto;
+    background: #d2d0e1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #867bc7;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+form input {
+    width: 270px;
+    margin-left: 25px;
+}
+
+button {
+    width: 70px;
+    margin-right: 25px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.none {
+    display: none;
+}
+
+.image {
+    height: 40px;
+    width: 40px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
